@@ -1,0 +1,15 @@
+.resultHolder {
+	padding-left: 150px;
+}
+
+@media screen and (max-width: 855px) {
+	.resultHolder {
+		padding-left: 50px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.resultHolder {
+		padding-left: 20px;
+	}
+}

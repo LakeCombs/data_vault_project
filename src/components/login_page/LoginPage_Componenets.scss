@@ -1,0 +1,157 @@
+@import "../../constant/theme_color.scss";
+
+.LoginPage_Component {
+	display: flex;
+	flex-direction: row;
+}
+
+.SideImage {
+	width: 50%;
+	height: 100vh;
+}
+
+.LoginPage_rightSide {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.LoginPage_rightSide > img {
+	width: 80px;
+	height: 60px;
+}
+
+.LoginPage_welcome {
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.LoginPage_welcome > h2 {
+	color: $primary-color-blue;
+	font-weight: bolder;
+}
+
+.LoginPage_welcome > p {
+	color: $dark-color;
+	font-weight: lighter;
+}
+
+.Login_Input_field {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+}
+
+.InputField {
+	margin-top: 10px;
+	width: 400px;
+}
+
+.BottonFooterContainer {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.RegisterButton {
+	width: 400px;
+	height: 35px;
+	background-color: $primary-color-blue;
+	color: white;
+	margin-bottom: 30px;
+	border: none;
+	outline: none;
+}
+
+.BottonFooterContainer > p {
+	color: $primary-color-blue;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.signupButtons > button {
+	font-weight: lighter;
+	font-size: 12px;
+	margin: 5px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.signupButtons > button:hover {
+	color: $primary-color-blue;
+}
+
+.checkboxholder {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 400px;
+}
+
+.checkbox {
+	margin-top: 10px;
+}
+
+.checkbox > input {
+	margin-left: 12px;
+}
+
+@media screen and (max-width: 872px) {
+	.SideImage {
+		display: none;
+	}
+
+	.LoginPage_rightSide {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	.InputField {
+		width: 300px;
+		height: 30px;
+	}
+	// .Login_Input_field {
+	// 	align-items: center;
+	// }
+	.RegisterButton {
+		width: 300px;
+	}
+
+	.checkboxholder {
+		width: 300px;
+		font-size: 10px;
+	}
+	.BottonFooterContainer {
+		margin-top: -0px;
+	}
+
+	.BottonFooterContainer > p {
+		margin-top: -10px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.InputField {
+		width: 280px;
+	}
+	.RegisterButton {
+		width: 280px;
+		height: 30px;
+	}
+}

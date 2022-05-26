@@ -1,0 +1,127 @@
+@import "../../constant/theme_color.scss";
+
+.homePageHeaderContainer {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 50px 10px 50px;
+}
+
+.homePageHeaderContainer > img {
+	height: 80px;
+	width: 120px;
+	object-fit: center;
+}
+
+.homePageHeaderContent {
+	width: 65%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.homePageHeaderContent > p {
+	font-weight: 700;
+	color: $primary-color-blue;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+.loginButton {
+	height: $botton-size-height;
+	width: $button-size-width;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: transparent;
+	color: $primary-color-blue;
+	border-color: $primary-color-blue;
+}
+.loginButton:hover {
+	background-color: $primary-color-blue;
+	color: white;
+}
+
+.signupButton {
+	height: $botton-size-height;
+	width: $button-size-width;
+	background-color: $primary-color-orange;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	border: none;
+}
+
+.signupButton:hover {
+	border: solid;
+	border-color: $primary-color-blue;
+}
+
+.header_menu {
+	display: none;
+}
+
+@media screen and (max-width: 1433px) {
+	.homePageHeaderContent {
+		width: 70%;
+	}
+
+	.homePageHeaderContent > p {
+		font-weight: 500;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 1173px) {
+	.homePageHeaderContent > p {
+		display: none;
+	}
+
+	.homePageHeaderContent {
+		justify-content: flex-end;
+	}
+
+	.homePageHeaderContent > button {
+		margin: 10px;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	.loginButton {
+		height: 40px;
+		width: 100px;
+	}
+
+	.signupButton {
+		height: 40px;
+		width: 100px;
+	}
+
+	.homePageHeaderContainer > img {
+		height: 50px;
+		width: 100px;
+	}
+}
+
+@media screen and (max-width: 557px) {
+	.loginButton {
+		display: none;
+	}
+
+	.signupButton {
+		display: none;
+	}
+
+	.header_menu {
+		display: flex;
+		font-size: 30px;
+		color: $primary-color-blue;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.homePageHeaderContainer {
+		padding: 5px 5px 0px 10px;
+		margin: 0;
+	}
+}

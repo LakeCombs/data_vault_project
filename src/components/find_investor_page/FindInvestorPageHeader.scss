@@ -1,0 +1,75 @@
+@import "../../constant/theme_color.scss";
+
+.findInvestorPageHeader {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 50px 10px 50px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.findInvestorPageHeaderContent {
+	display: flex;
+	width: auto;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.findInvestorPageHeaderContent > img {
+	width: 100px;
+	height: 60px;
+}
+
+.findInvestorPageHeaderContent > h2 {
+	color: $primary-color-blue;
+}
+
+.findInvestorPageHeaderLink {
+	display: flex;
+	width: auto;
+}
+
+.findInvestorPageHeaderLink > p {
+	margin-right: 15px;
+	color: $primary-color-blue;
+	cursor: pointer;
+}
+
+.findInvestorPageHeaderLink > p:hover {
+	text-decoration: underline;
+}
+
+.findInvestorPageForm > form > input {
+	height: 30px;
+	width: 300px;
+	border: 1px solid $primary-color-blue;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 988px) {
+	.findInvestorPageHeaderLink {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.findInvestorPageHeaderContent > h2 {
+		font-size: 15px;
+	}
+
+	.findInvestorPageHeaderContent > img {
+		width: 70px;
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.findInvestorPageHeaderContent > img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.findInvestorPageHeaderContent > h2 {
+		font-size: 10px;
+	}
+}

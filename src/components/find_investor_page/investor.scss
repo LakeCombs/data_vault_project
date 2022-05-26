@@ -1,0 +1,51 @@
+.Investor {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	margin-top: 20px;
+}
+
+.Investor > div {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	align-items: flex-start;
+	height: 30px;
+	margin-top: 3px;
+}
+
+.Investor > div > h3 {
+	font-weight: bolder;
+	width: 200px;
+}
+
+.Investor > div > p {
+	font-weight: normal;
+}
+
+.Investor > hr {
+	width: 80%;
+	height: 3px solid black;
+}
+
+@media screen and (max-width: 548px) {
+	.Investor > div > h3 {
+		font-size: 14px;
+		width: 120px;
+	}
+
+	.Investor > div > p {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.Investor > div > h3 {
+		font-size: 13px;
+		width: 90px;
+		font-weight: bold;
+	}
+
+	.Investor > div > p {
+		font-size: 10px;
+	}
+}

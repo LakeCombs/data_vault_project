@@ -1,0 +1,44 @@
+@import "../../constant/theme_color.scss";
+
+.HowItWorkDetilsStyle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	margin: 10px;
+}
+
+.HowItWorkDetilsStyle > h2 {
+	text-align: center;
+	font-size: 18px;
+}
+
+.HowItWorkDetilsStyle > p {
+	text-align: center;
+	font-size: 13px;
+}
+
+.iconHolder {
+	font-size: 50px;
+	color: $primary-color-orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	height: 30px;
+	width: 30px;
+	background-color: lightblue;
+	align-self: center;
+}
+
+.HowItWorkDetilsStyle > img {
+	height: 40px;
+	width: 40px;
+}
+
+@media screen and (max-width: 425px) {
+	.HowItWorkDetilsStyle {
+		width: 90%;
+	}
+}
